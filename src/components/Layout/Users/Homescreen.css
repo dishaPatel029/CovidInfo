@@ -1,0 +1,74 @@
+#first {
+    background-image: url('https: //www.voicesofyouth.org/sites/voy/files/images/2020-03/thumbnail_image0.jpg');
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#first::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    content: '';
+    opacity: .7;
+    z-index: -1;
+}
+
+#first .firstcontainer {
+    max-width: 1200px;
+    margin-top: 100px;
+    padding: 143px 100px;
+    justify-content: flex-start;
+}
+
+#first h1 {
+    display: block;
+    width: fit-content;
+    position: relative;
+    color: transparent;
+    font-size: 4rem;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1s;
+}
+
+#first h2 {
+    display: block;
+    width: fit-content;
+    position: relative;
+    color: transparent;
+    font-size: 2rem;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1s;
+}
+
+#first h1:nth-child(1) {
+    animation-delay: 1s;
+}
+
+#first h2:nth-child(1) {
+    animation-delay: 2s;
+}
+
+#first h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: lightslategray;
+    animation: text_reveal_box 1s ease;
+    animation-delay: .5s;
+}
+
+#first h1:nth-child(1) span {
+    animation-delay: .5s;
+}
+
+#first h1:nth-child(2) span {
+    animation-delay: 1.5s;
+}
